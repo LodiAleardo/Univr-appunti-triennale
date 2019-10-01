@@ -1,0 +1,2 @@
+- schema ricorsivo su alberi binari
+- garbage e garbage collection
