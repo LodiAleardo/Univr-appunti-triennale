@@ -1,0 +1,1 @@
+7.2.3.24206wnds:Windows 86.2SntFC1483031758198D1483032130782S84301(/x/y(Cube(x) & Cube(y) & /z(Dodec(z)& Small(z) & (LeftOf(x, z) & LeftOf(y, z))))) $ (/x/y(Tet(x) & Tet(y) & /z(Dodec(z)& Medium(z) & Between(z, x, y))))s=33912;

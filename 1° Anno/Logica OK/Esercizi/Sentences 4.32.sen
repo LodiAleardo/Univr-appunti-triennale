@@ -1,0 +1,6 @@
+7.2.3.24206wnds:Windows 86.2SntFC1479943732756D1479943885073C1480366767630D1480367317048D1480367410271S153466~(Home(carl) & ~Home(claire))~Home(carl)  | ~~Home(claire)
+; Write the negation normal form of 1 here.  
+; Similarly for the other sentences that follow.~[Happy(max) & 
+(~Likes(carl, claire) | ~Likes(claire, carl))]~Happy(max) | (Likes(carl, claire) & Likes(claire, carl))~~~[(Home(max) | Home(carl)) & 
+        (Happy(max) | Happy(carl))][(~Home(max)  &  ~Home(carl)) | 
+        (~Happy(max)  & ~Happy(carl))]s=80111;

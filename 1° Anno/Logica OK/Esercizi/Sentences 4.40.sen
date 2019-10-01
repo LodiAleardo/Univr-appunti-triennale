@@ -1,0 +1,9 @@
+7.2.3.24206macs:Mac OS X10.11.6SntFC1481188131321D1481188631243D1481188752903D1481189070272D1481189664363D1481189896193D1481190027448C1481193505549D1481193625606D1481194072811D1481194448136S2971915~[(Cube(a) & ~Small(a)) | (~Cube(a) & Small(a))](~Cube(a)  |  Small(a))  &  (Cube(a)  | ~Small(a))
+; Put an NNF form of 1 here.(~Cube(a)  |  Small(a))  &  (Cube(a)  | ~Small(a))
+; Put a CNF form of 1 here.~[(Cube(a) | ~Small(a)) & (~Cube(a) | Small(a))]( ~Cube(a)  &  Small(a))  | (Cube(a)  &  ~Small(a))
+; Put an NNF form of 4 here. Notice the relationship
+; with 2.(~Cube(a) | Cube(a)) &  (Small(a) | Cube(a)) & ( ~Cube(a) | ~Small(a)) & (Small(a) | ~Small(a))
+; Put an CNF form of 5 here. Notice the relationship 
+; with 3.~(Cube(a) & Larger(a, b)) & Dodec(b)(~Cube(a)  |  ~Larger(a, b)) & Dodec(b)(~Cube(a)  |  ~Larger(a, b)) & Dodec(b)~(~Cube(a) & Tet(b))Cube(a)  |  ~Tet(b)Cube(a)  |  ~Tet(b)~~Cube(a) | Tet(b)
+; Notice the difference between this sentence and 
+;10.Cube(a) | Tet(b)Cube(a) | Tet(b)s=164768;

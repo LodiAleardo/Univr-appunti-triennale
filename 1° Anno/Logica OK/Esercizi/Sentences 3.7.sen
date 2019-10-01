@@ -1,0 +1,9 @@
+7.2.3.24206wnds:Windows 86.2SntFC1479942835017D1479943460829S857310Dodec(f) & Dodec(b) & SameRow(f, b)Tet(a) & Tet(d) & FrontOf(a, d)Cube(c) & Cube(e) & ~SameRow(c, e)Between(b, d, f) & ~Between(b, e, f) ~(Large(d) & Large(e))
+; Notice that the negation sign applies to the whole
+; expression that follows it, because of the 
+; parentheses.  Larger(e, f) & Larger(b, f)SameSize(d, c) & Large(c) ~BackOf(c, e) & ~BackOf(e, d)
+; Notice that this sentence is a conjunction of two
+; sentences, each starting with a negation sign.   ~(Small(f) & Small(a)) ~(~Adjoins(b, f) & SameRow(b, f))
+; This one is a bit tricky. It is a negation of a
+; conjunction; the first conjunct starts with a 
+; negation but the second does not.s=112758;

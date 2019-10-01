@@ -1,0 +1,6 @@
+7.2.3.24206macs:Mac OS X10.11.6SntFC1484989810568D1484989904066S987810/v BackOf(b, c)BackOf(b, c)
+; Write a quantifier-free sentence equivalent
+; to 1 here, and similarly for the next two
+; sentences.@x Dodec(b)Dodec(b)/x (Cube(c) & Small(c))Cube(c) & Small(c)/x @y (Tet(y) $ Small(y))@y (Tet(y) $ Small(y))
+; Get rid of the null quantifier./y @y (Tet(y) $ Small(y))@y (Tet(y) $ Small(y))
+; Which quantifier is null?s=67358;
