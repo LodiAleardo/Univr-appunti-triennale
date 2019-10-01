@@ -10,6 +10,9 @@ Qui troverete un po' di tutto per passare tutti i 3 anni all'univr se fate infor
 ## Dove trovare altro materiale
 
 [Dispense magistrale e triennale](https://github.com/davbianchi/dispense-info-univr)
+
 [SiS](https://github.com/JackHack96/logic-synthesis)
+
 [Appunti findamenti](https://github.com/JackHack96/Appunti-Fondamenti-Informatica)
+
 [TeX](https://tex.stackexchange.com)
