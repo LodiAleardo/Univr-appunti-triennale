@@ -1,0 +1,2 @@
+- Metodi sovrascritti
+- Cambiamento del tipo di ritorno per i metodi sovrascritti

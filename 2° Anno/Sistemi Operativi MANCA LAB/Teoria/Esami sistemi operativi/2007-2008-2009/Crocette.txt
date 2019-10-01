@@ -1,0 +1,42 @@
+Domande sistemi operativi
+
+1) Il time sharing è la stessa cosa di multitasking? V
+2) VM è sistema monolitico? F
+3) Le variabili globali sono salvate nello stack? F
+4) Lo stack dell'immagine del processo è eseguito in modalità kernel? V
+5) L'algoritmo del banchiere è più efficiente dell'algoritmo di detenction? F
+6) Due processi indipendenti sono deterministici e non riproducibili? F
+7) Possono accedere due processi alla mutua esclusione? F
+8) La VM favorisce timesharing? V
+9) Semafori: P1() P(A) P(B)  e  P2() P(B) P(A) va in deadlock? se sicronizzai V, se non sincronizzati F
+10) La VM permette il time sharing? V
+11) il DMA è stato inventato per risolvere i problemi di polling? V
+12) E' vero che tutte le situazioni di unsafe sono deadlock? F
+13) Quando uso gli algoritmi del banchiere e detection c'è un'eccessivo spreco di risorse? V
+14) 32 bit sono suffiecienti per indirizzare 4gb di memoria? V
+15) Il buffering risolve il problema dello spooling? F
+16) Se si blocca una thread a livello utente blocca tutto il processo? V
+17) P1 e P2 al banchiere richiedere una risorsa senza ottenerla e poi P3 ne richiede 2 o 3 può ottenerla? V
+18) In un rag quando c'è un ciclo c'è sempre deadlock? F
+19) I sistemi batch puntano  più alla mole di lavoro che al tempo di risposta? V
+20) I sistemi batch sono stati i primi a introdurre la multiprogrammazione? F
+21) MMU trasforma indirizzi logico in fisico? V
+22) Il buddy system elimina la frammentazione interna ma non quella esterna? F
+23) La memoria logica può essere minore della memoria fisica? F
+24) Un processo nella prevenzione statica può richiedere risorse solo in ordine crescente/decrescente di priorità? V
+25) Archi di reclamo sono indicati con freccia tratteggiata? V
+26) Archi di reclamo collegano risorse con risorse? F
+27) Archi di reclamo collegano processi con processi? F
+28) Nel binding a runtime, indirizzo fisico e logico potrebbero essere diversi? V sono diversi
+29) Nella frammentazione esterna esiste lo spazio disponibile in memoria ma non è contiguo? V
+30) L'MMU utulizza il registro di rilocazione per passare dagli indirizzi logici a quelli fisici? F perchè MMU utilizza anche altri registri
+31) Un processo che fa un link statico alle librerie impiega più tempo a caricarsi in memoria rispetto ad un processo che fa un link dinamico? F
+32) Best fit è migliore di first fit perchè ottimizza l'utilizzo della memoria? F
+33) Le system call forniscono un'interfaccia all'utente per l'hw con il passaggio da user a kernel? V
+34) Polling e interrupt sono due sistemi per accedere a dispositivi di I/O? V
+35) Nei sisyemi distribuiti si accede alle risorse remote come fossero locali? V
+36) Il PCB contiene le informazioni sullo stato del processo? V
+37) Quando ogni processo è in attesa di un evento che può essere causato da un processo dello stesso insieme è in deadlock? V
+38) In un sistema multiprogrammato i processi vengono eseguiti sequenzialmente? V un'istruzione alla volta ma evolvono concorrentemente
+39) Un sistema multitasking funziona solo su architetture multiprocessore? F
+40) La paginazione permette che lo spazio di indirizzamento logico di un processo sia non contiguo? V

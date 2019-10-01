@@ -1,0 +1,2 @@
+- realizzare un display doppio (il tabellone della mensa)
+- metodi statici di java.lang.Math
