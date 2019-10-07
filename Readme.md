@@ -1,6 +1,6 @@
 # Breve introduzione
 
-ToDo
+Mancano ancora delle materie, con il tempo le caricheró 
 
 ## Come contattarmi
 
