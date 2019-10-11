@@ -1,0 +1,2 @@
+- package e import
+- esempio di classi organizzate in package che usano gli array

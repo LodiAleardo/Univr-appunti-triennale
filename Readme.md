@@ -1,6 +1,6 @@
 # Breve introduzione
 
-Qui troverete un po' di tutto per passare tutti i 3 anni all'univr se fate informatica. Potete scaricare usare tutto come volete e fare i commit, cercheró di  aggiornare tutto il piú possibile
+Mancano ancora delle materie, con il tempo le caricheró 
 
 ## Come contattarmi
 
