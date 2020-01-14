@@ -1,0 +1,313 @@
+Il rango di una matrice corrisponde al rango dell'applicazione lineare indotta Fa, e coincide con dimImg(F). Giacché il rango di due matrici simili coincide, esso può essere calcolato anche come numero di colonne dominanti o righe non nulle della matrice U, ottenuta tramite il procedimento di eliminazione di Gauss.
+Dicesi inversa Destra la Matrice Rnxm € C, tale che A * R = Identità, mentre viene definita inversa sinistra la matrice Lnxm € C t.c. L * A = Identità.
+
+Condizione necessaria e sufficiente affinché una matrice di forma mxn abbia inversa destra è che Ax = b abbia soluzioni per ogni b. Infatti:
+
+Sia A una matrice mxn, sia R la sua inversa destra:
+
+A * (Rb) = (AR) * b = I * b = b, cioé Rb è soluzione per ogni Ax = b
+
+Condizione necessaria e sufficiente affinché una matrice A di forma mxn abbia inversa sinistra è che Ax = b abbia un'unica soluzione. Infatti:
+
+Sia s la soluzione del sistema:
+
+As = b -> LAs = Lb = -> Is = Lb -> s = Lb
+
+La soluzione esiste ed è unica.
+
+****
+
+Affinché esista una base di C^n formata da autovettori di A, A deve essere diagonalizzabile, cioé deve esistere una matrice S invertibile tale che A = S B S-1, con B matrice diagonale.
+
+Ipotesi: esiste una matrice B diagonale e una S invertibile tale che A = S B S-1
+
+Tesi: esiste una base di C^n formata da utovettori di A.
+
+Dimostrazione:
+
+A = S B S-1
+
+A * S = S * B * I
+
+A si = S  bi ei - con i che va da 1 a n
+
+Asi = bi si
+
+bi = autovalore
+
+si = autovettore
+
+si è autovettore per l'autovalore bi.
+
+Poiché S è una matrice invertibile, rkS = n, quindi le sue colonne sono una base dello spazio delle colonne di S. Essendo n colonne indipendenti in uno spazio di dimensione n, C(S) = C^n
+Concludo che B { si....sn} è una base composta da autovettori.
+
+***
+
+Sia A una matrice 3 x 3 con determinante diverso da 0: questo significa che rkA = 3, cioé N(A) = {0}. Non esiste dunque un vettore v diverso da 0 tale che:
+
+A * v = 0 * v
+
+Per il teorema di nullità più rango infatti, dim A = dimN(A) + dim(Imf) -> 3 = 0 + 3.
+
+***
+
+Una applicazione lineare biettiva è dotata di queste proprietà:
+- è iniettiva, cioé ogni vettore del dominio è preimmagine di uno ed uno solo vettore del codominio.
+- è suriettiva, per il teorema di nullità + rango, la dimV = dim C^n
+- è totale, perché {v1....vn} sono base
+- è lineare, cioé
+f(v1) + f(v2) = f (v1 + v2)
+§f(v1) = f(§v1)
+
+Un esempio di applicazione lineare biettiva, è la funzione identità: f: C3 -> c3
+									v -> v
+
+***
+
+{v1, v2, v3 } è un insieme linearmente indipendente, per cui: §v1 + §v2 + §v3 = 0 se e solo se §1,2,3 = 0.
+
+§v1 + §v2 + §v4 + §v5 = 0
+
+Sappiamo che §v1 e §v2 sono linearmente indipendenti tra di loro.
+
+v4 = X*v2 + v3
+
+v4 è frutto della combinazione lineare dei vettori v3, v2, per cui, per definizione, è un vettore linearmente dipendente, salvo il caso nel quale X = 0, e dunque v4 = v3.
+
+v5= v1-v2
+
+v5 è un vettore frutto della combinazione lineare di v1,v2 e non dipendente da alcuna variabile, per cui, l'insieme {v1,v2,..etc} non è linearmente indipendente
+
+***
+
+Sia A una matrice 3 x 3 con determinate = 0, questo significa che rkA minore uguale di 3, cioé N(A) diversa da {0}. Esiste dunque un vettore v diverso da 0 tale che:
+
+A * v = 0 * v, quindi 0 è un autovalore per A.
+
+***
+
+Per il teorema di nullità più rango, non può esistere un'applicazione lineare suriettiva f: c3 -> c4 poiché:
+
+dim(c3) == 3 = dimN(f) + dim(Im(f))
+
+Dim(Im(f)) può essere dunque al più 3, da ciò consegue che l'applicazione non può essere suriettiva.
+
+***
+
+{v1, v2, v3} è base dello spazio vettoriale V, ciò significa che rkV = 3, poiché ogni v € V = <v1, v2, v3>.
+v4 = §1*v1 + §2*v2 + §3*v3, poiché v4 € V, ed è combinazione lineare degli altri vettori.
+L'insieme {v1,v2,v3,v4} non è dunque un insieme linearmente indipendente.
+
+***
+
+Per il teorema di nullità più rango: 4 = DimN(fa) + 2, cioé lo spazio nullo di F è non banale ({0}). Essendo f(0) <> {0}, non esiste una funzione iniettiva da c4 in c2.
+
+***
+
+La molteplicità algebrica corrisponde alla radice di p(x), rispetto ad un autovalore §. La molteplicità geometrica invece corrisponde alla dimensione dell'autospazio rispetto ad un autovalore.
+
+Dimostrazione che 1 <= d <= m
+
+d = dimEa(§)
+
+1 <= d è vera poiché a § è un autovalore e l'autospazio associato ha dunque dimensione almeno 1.
+
+d<=m
+
+Sia {v1....vd} una base di Ea (§) Posso completare questi vettori a una base di (C^n) detta B { v1....vd......vn}
+
+B = § 0 0 ..??
+    0 § 0 ..??
+    0 ......??
+    ... ... ??
+
+Fa(v1) = A * v1 = §v1
+
+Osservo che B e A sono matrici simili, perché sono matrici della stessa applicazione lineare. Fa = Pa(x) = Pb(x)
+Pa(x) = (x-§)^m * g(x)
+Pb(x) = (x-§)^d * h(x)
+
+Dunque d<=m!
+
+
+
+***
+
+Uno spazio vettoriale con prodotto scalare è uno spazio vettoriale dotato di una funzione detta prodotto interno:
+( | ) VxV ->n (C)
+(v,w) ------->(v|w) = x
+
+Proprietà:
+1.(v|w) = (w|v)
+2. (v | §w + Bu) = §(v|w) + B (v|u)
+3. (v|v) > 0 per ogni v diverso da 0.
+
+Esempio:
+
+VxV ---> C
+(v,w) -> vH-trasposto*w
+
+Dimostrazione per la quale ogni spazio euclideo con prodotto interno è dotato di una base ortogonale, per induzione
+
+P.Base:
+
+Dimensione dello spazio: 1
+V = <v>
+B = {b}
+
+C'e un solo vettore per cui non bisogna dimostrare nulla.
+
+P.Induttivo:
+
+Dimensione spazio: n + 1
+V = < v, v1....vn>
+DimV = n + 1
+
+Allora esiste v diverso da 0 € V t.c. V = <v> o+ <v>T (somma diretta e ortogonale)
+dim <v>T = n.
+
+Per ipotesi induttiva , esiste una  base ortogonale {v1...vn} di <v>T
+{v, v1...vn} è un insieme di vettori ortogonali e non nulli, tra loro indipendenti e sono n+1, per cui essa è base ortogonale di V.
+
+***
+
+Il sottospazio somma X + Y è il più piccolo sottospazio contenente sia X che Y. Condizione necessaria e sufficiente per cui dim(x + Y) = dimX +o dimY è che X intersecato a Y = {0}.
+
+Dimostrazione:
+
+a. Se U+W = U+oW, cioé U intersecato a W = 0
+Sia v € U+W, se v = v1 + w1 = v2 + w2, allora v1-v2 = w1-w2. Quindi v1-v2 € a U intersecato a W che per ipotesi è 0, per cui tutti e due 0.
+b... etc
+
+********
+
+
+Si dia una condizione necessaria e sufficiente per la quale una matrice A mxn € C abbia inversa destra.
+
+Le seguenti condizioni sono equivalenti:
+
+A) La matrice A ha inversa destra R nxm € C
+B) La matrice A ha soluzioni per ogni b
+C) Il rango della matrice A è m
+
+A) -> B)
+
+Ipotesi: La matrice A ha inversa destra R nxm € C
+
+Tesi: La matrice ha soluzioni per ogni b
+
+Dimostrazione:
+
+Sia A una matrice mxn € C, e sia R nxm € C la sua inversa destra t.c. A * R = I
+
+A * (Rb) = (AR) * b = I * b = b -> A * (Rb) = b
+
+Cioé la matrice A ha soluzioni per ogni b, e questa soluzione è rappresentata da (Rb)
+
+B) -> C)
+
+Ipotesi: La matrice ha soluzioni per ogni b
+
+Tesi: Il rango della matrice A è m
+
+Dimostrazione: 
+
+Per ipotesi, sappiamo che per ogni b, mediante eliminazione di Gauss, da (A | b) otteniamo (U | c), con U mxn: la colonna dei termini noti cioé non è mai dominante, ed U ha rango massimo, cioé m
+
+C) -> A)
+
+Ipotesi: Il rango della matrice A è m
+
+Tesi: La matrice A ha inversa destra R nxm € C
+
+Dimostrazione:
+
+Se il rango della matrice A è m, allora esiste R t.c. A*R=I.
+
+R = { r1......rm }
+
+A * R = A * {r1.......rm} = {Ar1......Arm} = {e1....em} = I
+
+I vettori di R sono i vettori Ari=ei. Poiché A ha rango massimo, la colonna dei termini noti non è mai dominante, e il sistema lineare sempre risolvibile.
+Esiste sempre dunque una ri t.c. A*ri=ei
+La matrice di R così ottenuta è inversa destra di A.
+
+
+****************************************************
+
+
+Si dia una condizione necessaria e sufficiente affinche una matrice A mxn € C abbia inversa sinistra.
+
+Le seguenti condizioni sono equivalenti:
+
+A) La matrice A mxn € C ha inversa sinistra
+B) Il sistema Ax=0 ammette un'unica soluzione, cioé x = 0
+C) La matrice A ha rango n
+D) A-hA è invertibile
+
+A)->B)
+
+Ipotesi: La matrice A mxn € C ha inversa sinistra
+
+Tesi: Il sistema Ax=0 ammette un'unica soluzione, cioé x = 0
+
+Dimostrazione:
+
+Sia A una matrice  mxn, sia L nxm la sua inversa sinistra e sia s la soluzione di As=b
+
+L * As = L b -> (LA)s = Lb -> Is=Lb -> s = Lb
+
+La soluzione esiste ed è unica.
+
+B) -> C)
+
+Ipotesi: Il sistema Ax=0 ammette un'unica soluzione, cioé x = 0
+
+Tesi: La matrice A ha rango n
+
+Dimostrazione:
+
+Mediante eliminazione di Gauss da (A | 0) otteniamo (U | 0), e per ipotesi questo sistema ha un unica soluzione. Quindi tutte le colonne di U sono dominanti, ed rKA = n
+
+C) -> D)
+
+Ipotesi: La matrice A ha rango n
+
+Tesi: A-ha è invertibile
+
+Dimostrazione:
+
+La matrice A-hA è quadrata, basta dimostrare che A-h ha inversa destra. Ma dal precedente teorema, basta controllare che il rango di A-hA = n. Cioé bisogna controllare che tutte le colonne della sua forma ridotta sono dominanti, cioé che il sistema (A-hA)x = 0 abbia un'unica soluzione, cioé x = 0.
+Quindi sia v una soluzione di A-hAx=0, cioé A-hA=0, allora v-hA-hAv=0
+
+Se Av = y1
+        y2
+        y3
+                 __ __ __
+Allora v-hA-h = (y1 y2 y3)
+			__     __     __
+Quindi v-hA-h*Av = 0 -> y1y1 + y2y2 + y3y3 = |y1| + |y2| + |y3| = 0, cioé valgono tutti 0.
+
+Quindi Av=0, ma poiché il rango di A è n, concludo che v = 0.
+
+D) -> A)
+
+Ipotesi: A-hA è invertibile
+
+Tesi: A ammette inversa sinistra
+
+Dimostrazione:
+
+Per ipotesi 3 (A-hA)-1.
+
+Allora (A-hA)-1*A-h*A=I
+
+(A-hA)-1*A-h -> è l'inversa sinistra di A.
+
+
+********************************************
+
+
+
+
