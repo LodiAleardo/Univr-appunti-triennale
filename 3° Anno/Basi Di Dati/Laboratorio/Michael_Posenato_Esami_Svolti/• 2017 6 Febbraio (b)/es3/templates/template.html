@@ -1,0 +1,21 @@
+<!--template che permetta di scegliere una citta' dalla lista citta, lista di 
+	dict in forma {codice,nome} (data come parametro) e una data (gg/mm/aaaa) e invii i dati all'URL '/telefonateCittaData' -->
+
+<form action='/telefonateCittaData' method='GET'>
+
+	<!-- Inserimento della data (dominio approssimativo)-->
+	<label>Data [gg/mm/aaaa]: </label>
+	<input type="text" name="data_in" pattern="[0-9]{1,2}/[0-9]{1,2}/[0-9]{4}">
+
+	<!-- Scelta della citta -->
+	<label>Citta: </label>
+	<select name="citta_in">
+		{% for c in citta %}
+			<option value = "{{ c.codice }}">{{ c.nome }}</option>
+		{% endfor %}
+	</select>
+
+	<!-- Invio dati-->	
+	<input type="submit" value="invia">
+
+</form>
