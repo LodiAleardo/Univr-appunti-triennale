@@ -15,7 +15,7 @@ Qui troverete altre cose con cui integrare il mio materiale, vorrei diventasse u
 
 [SiS](https://github.com/JackHack96/logic-synthesis)
 
-[Appunti findamenti](https://github.com/JackHack96/Appunti-Fondamenti-Informatica)
+[Appunti fondamenti](https://github.com/JackHack96/Appunti-Fondamenti-Informatica)
 
 [TeX](https://tex.stackexchange.com)
 
